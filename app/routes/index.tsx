@@ -1,32 +1,24 @@
-export default function Index() {
+import { Link } from "@remix-run/react";
+
+export default function IndexPage() {
   return (
-    <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.4" }}>
-      <h1>Welcome to Remix</h1>
-      <ul>
-        <li>
-          <a
-            target="_blank"
-            href="https://remix.run/tutorials/blog"
-            rel="noreferrer"
+    <div className="grid items-center justify-center h-screen">
+      <div className="grid gap-12 text-center">
+        <h1 className="text-6xl font-extrabold text-transparent uppercase bg-gradient-to-r from-blue-500 to-green-500 bg-clip-text">
+          Writer Buddy
+        </h1>
+        <h2 className="text-xl">
+          A community for writers to work on their stories
+        </h2>
+        <div>
+          <Link
+            to="/signup"
+            className="w-auto px-4 py-3 font-bold text-white bg-green-600 rounded-full hover:bg-green-700"
           >
-            15m Quickstart Blog Tutorial
-          </a>
-        </li>
-        <li>
-          <a
-            target="_blank"
-            href="https://remix.run/tutorials/jokes"
-            rel="noreferrer"
-          >
-            Deep Dive Jokes App Tutorial
-          </a>
-        </li>
-        <li>
-          <a target="_blank" href="https://remix.run/docs" rel="noreferrer">
-            Remix Docs
-          </a>
-        </li>
-      </ul>
+            Get Started
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }
