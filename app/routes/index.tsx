@@ -13,7 +13,7 @@ export default function IndexPage() {
         <div>
           <Link
             to="/signup"
-            className="w-auto px-4 py-3 font-bold text-white bg-green-600 rounded-full hover:bg-green-700"
+            className="px-4 py-3 font-bold text-white bg-green-600 rounded-full hover:bg-green-700"
           >
             Get Started
           </Link>
